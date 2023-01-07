@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <Script>
+        a=[1,23,4,4,5,6,7]
+        for(let i=a.length;i>0;i--){
+            a[i+4]=a[i-1]
+        }
+        a[0]=20
+        a[1]=30
+        a[2]=40
+        a[3]=50
+        a[4]=60
+        
+        console.log(...a)
+        //adding at pacific position of the array
+        var p=3
+        arr=[1,2,3,4,6,5,7]
+        for (let j=arr.length;j>p;j--){
+            arr[j+2]=arr[j-1]
+        }
+        arr[3]=20
+        arr[4]=30
+        arr[5]=40
+        console.log(...arr)
+        //adding at end of the array
+        arr[arr.length]=90
+        console.log(...arr)
+        //by using the functions
+        //add at bedining
+        a.unshift(90,100,200)
+        console.log(...a)
+        //add at pasific location
+        arr.splice(5,0,70,80,100)
+        console.log(...arr)
+        //deleating the elements
+        //deleating the at bigining
+        a.shift()
+        console.log(...a)
+        //deleating at the end
+        a.pop()
+        console.log(...a)
+        //deleting pasifi location
+        a.splice(2,6)
+        console.log(...a)
+        //sorting
+        a.sort()
+        console.log(...a)
+        a.reverse()
+        console.log(...a)
+        //sercthing
+        console.log(a.indexOf(4))
+        console.log(a.lastIndexOf(4))
+
+
+    </Script>
+    
+</head>
+<body>
+    
+</body>
+</html>
