@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="cal.css">
+    
+</head>
+<body>
+    <div class="body">
+    <div class="grid-container">
+        <div class="display " id="disp"></div>
+
+        <button class="item oparate"   onclick="back(value)"   value="C" >C</button>
+        <button class="item oparate" onclick="oparation(value)"  value="%">%</button>
+        <button class="item oparate "   onclick="backOnePosition()">x</button>
+        <button class="item oparate" onclick="oparation(value)" value="/">/</button>
+
+        <button class="item " onclick="number(value)" value="7" id="ID7">7</button>
+        <button class="item"  onclick="number(value)" value="8">8</button>
+        <button class="item"  onclick="number(value)" value="9">9</button>
+
+        <button class="item oparate" onclick="oparation(value)" value="+">+</button>
+
+        <button class="item" onclick="number(value)" value="4">4</button>
+        <button class="item" onclick="number(value)" value="5">5</button>
+        <button class="item" onclick="number(value)" value="6">6</button>
+
+        <button class="item oparate" onclick="oparation(value)" value="-">-</button>
+        <button class="item" onclick="number(value)" value="1">1</button>
+        <button class="item"onclick="number(value)" value="2">2</button>
+        <button class="item" onclick="number(value)" value="3">3</button>
+
+        <button class="item oparate" onclick="oparation(value)" value="*">*</button>
+
+        <button class="item" onclick="number(value)" value="00">00</button>
+        <button class="item" onclick="number(value)" value="0">0</button>
+        <button class="item " onclick="number(value)" value="." >.</button>
+
+        <button class="item oparate equal" onclick="oparation(value)" value="=">=</button>
+
+
+    </div>
+    </div>
+
+
+
+    <script>
+        function number(value){
+             var d=parseInt(document.getElementById("ID7").value)
+            
+        
+             console.log("d")
+             document.getElementById("disp").innerHTML="''+d"
+        }
+         function oparation(value){
+            switch(value){
+                case "C":
+                document.getElementById("disp").innerHTML=""
+                         break
+                case "%":
+                       break         
+                case "x":
+                       break         
+                case "/":
+                       break         
+                case "+":
+                       break 
+                case "-":
+                       break         
+                case "*":
+                     break         
+                case "=":
+                       break         
+               
+
+            }
+         }
+    </script>
+
+    
+</body>
+</html>
